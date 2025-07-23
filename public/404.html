@@ -6,7 +6,10 @@
     <script type="text/javascript">
       // GitHub Pages SPA redirect hack
       // Store the current path and redirect to index.html
-      var pathSegmentsToKeep = 0;
+      // IMPORTANT CHANGE HERE:
+      // For a GitHub Project Page at bibinvjoseph.github.io/bibinvjoseph/,
+      // 'bibinvjoseph' is 1 segment that needs to be kept in the base path.
+      var pathSegmentsToKeep = 1; // <--- CHANGE THIS LINE
       var l = window.location;
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
